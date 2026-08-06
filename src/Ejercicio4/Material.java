@@ -29,7 +29,7 @@ public class Material {
 
     }
     public void mostrarInformacion(){
-        System.out.println("Material - Titulo: "+ titulo+ ", código: "+ codigo);
+        System.out.println("Material - Titulo: "+ titulo + ", código: "+ codigo);
     }
 }
 
