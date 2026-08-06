@@ -18,7 +18,8 @@ public class Libro extends Material {
     public void setAutor(String autor){
         this.autor=autor;
     }
-
+    //getter y setter
+    
     private int getNumeroPaginas(){
         return numeroPaginas;
     }
