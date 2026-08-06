@@ -78,30 +78,60 @@ El laboratorio está segmentado en tres bloques temáticos principales para gara
 
 ## 💻 Estructura de Archivos del Proyecto
 
+Cada ejercicio vive en su propia carpeta en la raíz del repositorio (`EjercicioN/`), con sus clases `.java` y, cuando aplica, su `Main.java` de prueba.
+
 ```text
-lab3-java-poo/
-├── src/
-│   ├── nivel1_excepciones/
-│   │   ├── ValidadorEdad.java
-│   │   ├── DivisionSegura.java
-│   │   ├── EntradaNumerica.java
-│   │   ├── PromedioNotas.java
-│   │   ├── NumeroMayorBubbleSort.java
-│   │   ├── EstadisticasBasicas.java
-│   │   ├── ClasificacionEdad.java
-│   │   └── MenuBasico.java
-│   │
-│   ├── nivel2_poo/
-│   │   ├── ej1_animales/      # Animal, Perro, Gato, Main
-│   │   ├── ej2_vehiculos/     # Vehiculo, Carro, Moto, Main
-│   │   ├── ej3_pagos/         # Pago, PagoTarjeta, PagoEfectivo, Main
-│   │   ├── ej4_materiales/    # Material, Libro, Revista, Main
-│   │   ├── ej15_empleados/    # Empleado, EmpleadoTiempoCompleto, EmpleadoPorHoras, Main
-│   │   └── ej16_productos/    # Producto, ProductoFisico, ProductoDigital, Main
-│   │
-│   └── nivel3_uml/
-│       ├── Ejercicio13_DiagramaClases.puml
-│       └── Ejercicio14_DiagramaSecuencia.puml
+LaboratorioCuatro/
+├── Ejercicio1/                  # Sistema de Animales
+│   ├── Animal.java
+│   ├── Perro.java
+│   ├── Gato.java
+│   └── Main.java
+├── Ejercicio2/                  # Sistema de Vehículos
+│   ├── Vehiculo.java
+│   ├── Carro.java
+│   ├── Moto.java
+│   └── Main.java
+├── Ejercicio3/                  # Sistema de Pagos
+│   ├── Pago.java
+│   ├── PagoTarjeta.java
+│   ├── PagoEfectivo.java
+│   └── Main.java
+├── Ejercicio4/                  # Sistema de Biblioteca
+│   ├── Material.java
+│   ├── Libro.java
+│   ├── Revista.java
+│   └── Main.java
+├── Ejercicio5/                  # Validador de Edad
+│   └── ValidadorEdad.java
+├── Ejercicio6/                  # División Segura
+│   └── DivisionSegura.java
+├── Ejercicio7/                  # Entrada Numérica
+│   └── EntradaNumerica.java
+├── Ejercicio8/                  # Promedio de Notas
+│   └── PromedioNotas.java
+├── Ejercicio9/                  # Número Mayor & Bubble Sort
+│   └── NumeroMayorBubbleSort.java
+├── Ejercicio10/                 # Estadísticas Básicas
+│   └── EstadisticasBasicas.java
+├── Ejercicio11/                 # Clasificación de Edad
+│   └── ClasificacionEdad.java
+├── Ejercicio12/                 # Menú Básico Interactivo
+│   └── MenuBasico.java
+├── Ejercicio13/                 # Diagrama de Clases (UML)
+│   └── DiagramaClases.puml
+├── Ejercicio14/                 # Diagrama de Secuencia (UML)
+│   └── DiagramaSecuencia.puml
+├── Ejercicio15/                 # Sistema de Empleados
+│   ├── Empleado.java
+│   ├── EmpleadoTiempoCompleto.java
+│   ├── EmpleadoPorHoras.java
+│   └── Main.java
+├── Ejercicio16/                 # Sistema de Productos
+│   ├── Producto.java
+│   ├── ProductoFisico.java
+│   ├── ProductoDigital.java
+│   └── Main.java
 │
 └── README.md
 ```
@@ -124,14 +154,14 @@ lab3-java-poo/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/lab3-java-poo.git
-cd lab3-java-poo
+git clone https://github.com/Angelykcoder/LaboratorioCuatro.git
+cd LaboratorioCuatro
 ```
 
-### 2. Compilar y ejecutar un ejercicio del Nivel 1
+### 2. Compilar y ejecutar un ejercicio del Nivel 1 (script simple)
 
 ```bash
-cd src/nivel1_excepciones/
+cd Ejercicio5/
 javac ValidadorEdad.java
 java ValidadorEdad
 ```
@@ -141,17 +171,17 @@ java ValidadorEdad
 Ejemplo con el **Sistema de Productos**:
 
 ```bash
-cd src/nivel2_poo/ej16_productos/
+cd Ejercicio16/
 javac *.java
 java Main
 ```
 
-> 🔁 El mismo patrón aplica para el resto de paquetes (`ej1_animales`, `ej2_vehiculos`, `ej3_pagos`, `ej4_materiales`, `ej15_empleados`): entra a la carpeta correspondiente, compila con `javac *.java` y ejecuta con `java Main`.
+> 🔁 El mismo patrón aplica para el resto de carpetas con varias clases (`Ejercicio1`, `Ejercicio2`, `Ejercicio3`, `Ejercicio4`, `Ejercicio15`): entra a la carpeta correspondiente, compila con `javac *.java` y ejecuta con `java Main`.
 
 ### 4. Visualizar Diagramas PlantUML en VS Code
 
 1. Instala la extensión **PlantUML** en VS Code.
-2. Abre cualquier archivo `.puml` ubicado en `src/nivel3_uml/`.
+2. Abre el archivo `.puml` dentro de `Ejercicio13/` o `Ejercicio14/`.
 3. Presiona `Alt + D` (o `Option + D` en macOS) para abrir la vista previa interactiva.
 
 ---
@@ -167,8 +197,6 @@ java Main
 
 ## 👤 Autor
 
-Proyecto desarrollado como parte del **Laboratorio 3 de Programación** — Fundamentos de Java, POO y Control de Versiones.
+|Diego Flores|
 
 ---
-
-<p align="center">Hecho con ☕ y Java</p>
