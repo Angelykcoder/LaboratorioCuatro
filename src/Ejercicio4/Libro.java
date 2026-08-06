@@ -19,7 +19,7 @@ public class Libro extends Material {
         this.autor=autor;
     }
 
-    private int getNumeroPaignas(){
+    private int getNumeroPaginas(){
         return numeroPaginas;
     }
 
