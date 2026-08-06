@@ -6,7 +6,7 @@ public class ClasificacionEdad {
         Scanner scanner = new Scanner(System.in);
         int edad = -1; 
         boolean entradaValida = false;
-
+        System.out.println("Ejercicio 11: Clasificación de Edad");
         System.out.println("--- Sistema de Clasificación de Edad ---");
 
         // 1. Pedir la edad y validarla

@@ -7,6 +7,7 @@ public class Main {
         Vehiculo Moto1= new Moto("Honda", "CRF", 250);
         //Arreglo 
         Vehiculo[] Losvehiculos={Carro1, Moto1};
+         System.out.println("Ejercicio 2: Sistema de Vehículos");
         System.out.println("Ejemplo Polimorfimso");
    
         for(Vehiculo v: Losvehiculos){

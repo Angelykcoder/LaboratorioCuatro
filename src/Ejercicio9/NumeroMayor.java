@@ -12,7 +12,7 @@ public class NumeroMayor {
         // Arreglo de tamaño fijo para los 3 números
         double[] numeros = new double[3];
         int contador = 0;
-
+        System.out.println("Ejercicio 9: Número Mayor");
         System.out.println("--- Buscador del Número Mayor  ---");
 
         // Pedimos los 3 números con validación de errores

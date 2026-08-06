@@ -9,7 +9,7 @@ public class MenuBasico {
         int opcion = 0;
         boolean continuar = true;
 
-
+        System.out.println("Ejercicio 12: Menú Básico");
         do {
             System.out.println("\n--- MENÚ DE CALCULADORA BÁSICA ---");
             System.out.println("1. Sumar dos números");

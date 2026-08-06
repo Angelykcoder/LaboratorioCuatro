@@ -8,7 +8,7 @@ public class EntradaNumerica {
         Scanner scanner = new Scanner(System.in);
         boolean numeroValido= false;
         double numero =0; 
-
+    System.out.println("Ejercicio 7: Entrada Numérica");
         System.out.println("--- Validar Entrada Numerica--");
 
         while (!numeroValido){

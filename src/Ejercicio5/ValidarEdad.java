@@ -8,7 +8,7 @@ public class ValidarEdad {
 
     int edad=0;
     boolean edadValida=false;
-  
+   System.out.println("Ejercicio 5: Validación de Edad");
   System.out.println("--- Sistema de Verificación de Edad ---");
     
 

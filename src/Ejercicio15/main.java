@@ -5,6 +5,7 @@ public class main {
     public static void main(String[] args) {
         
         ArrayList<Empleado> nomina = new ArrayList<>();
+        System.out.println("Ejercicio 15: Sistema de Empleados");
         System.out.println("--- Sistema de Nómina de Empleados ---\n");
 
         try {

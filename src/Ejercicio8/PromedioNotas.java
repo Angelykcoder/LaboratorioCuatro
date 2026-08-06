@@ -12,7 +12,7 @@ public class PromedioNotas {
         
         double suma = 0;
         int cantidadNotas = 5;
-
+        System.out.println("Ejercicio 8: Promedio de Notas");
         System.out.println("--- Calculadora de Promedio de Notas ---");
         System.out.println("Por favor, ingrese " + cantidadNotas + " notas.");
 

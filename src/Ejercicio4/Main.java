@@ -11,7 +11,7 @@ public class Main {
 
         // Creamos un arreglo de Materiales
         Material[] inventario = { libro1, revista1};
-
+        System.out.println("Ejercicio 4: Sistema de Biblioteca");
         System.out.println("--- Inventario de la Biblioteca ---");
         System.out.println("-----------------------------------");
         

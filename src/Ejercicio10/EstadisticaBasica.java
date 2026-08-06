@@ -10,7 +10,7 @@ public class EstadisticaBasica {
         double[] numeros = new double[5];
         int contador = 0;
         double suma = 0;
-
+        System.out.println("Ejercicio 10: Estadísticas Básicas");
         System.out.println("--- Calculadora de Estadísticas Básicas ---");
         System.out.println("Por favor, ingrese 5 números.");
 

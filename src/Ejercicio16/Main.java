@@ -7,7 +7,7 @@ public class Main {
         
         // Creamos una lista genérica de la clase padre
         ArrayList<Producto> carritoCompras = new ArrayList<>();
-        
+          System.out.println("Ejercicio 16: Sistema de Productos");
         System.out.println("--- Tienda en Línea ---\n");
 
         try {

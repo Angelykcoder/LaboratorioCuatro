@@ -24,7 +24,7 @@ public class PagoEfectivo extends Pago {
             System.out.println("Sue vuelto es de Q."+ vuelto);
 
         }else{
-            System.out.println("Error el dinero entregado Q"+ dineroEntregado+" no alcanza para cubrir" + getMonto());
+            System.out.println("Error el dinero entregado Q"+ dineroEntregado+" no alcanza para cubrir " + getMonto());
         }
     }
 }

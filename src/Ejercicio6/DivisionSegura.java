@@ -6,7 +6,7 @@ public class DivisionSegura {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-
+           System.out.println("Ejercicio 6: División Segura");
         System.out.println("--- Calculadora de División ---");
 
         try {

@@ -14,7 +14,7 @@ public class Main {
 
         // Agrupo los pagos en un arreglo 
         Pago[] transacciones = { pago1, pago2, pago3 };
-
+        System.out.println("Ejercicio 3: Sistema de Pagos");
         System.out.println("--- Sistema de Procesamiento de Pagos ---");
         
         // Proceso todos los pagos
