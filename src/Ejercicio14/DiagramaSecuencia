@@ -1,0 +1,37 @@
+@startuml
+' Habilita la numeración automática de los pasos
+autonumber
+
+' Definición de los participantes con diferentes iconos UML
+actor Usuario as U
+boundary "Interfaz Gráfica" as UI
+control "GestorEstudiantes" as Gestor
+database "Base de Datos" as BD
+
+' Comienza la interacción
+U -> UI : Ingresa ID del estudiante y da clic en "Buscar"
+activate UI
+
+UI -> Gestor : consultarEstudiante(ID)
+activate Gestor
+
+Gestor -> BD : SELECT * FROM Estudiantes WHERE id = ID
+activate BD
+
+' Retorno de la base de datos
+BD --> Gestor : Resultado de la consulta
+deactivate BD
+
+' Bloque condicional (if / else)
+alt Estudiante encontrado
+    Gestor --> UI : Retorna datos (Objeto Estudiante)
+    UI --> U : Muestra perfil e información en pantalla
+else Estudiante no existe
+    Gestor --> UI : Retorna null / error
+    UI --> U : Muestra mensaje de alerta "Estudiante no encontrado"
+end
+
+deactivate Gestor
+deactivate UI
+
+@enduml

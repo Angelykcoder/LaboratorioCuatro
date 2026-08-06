@@ -1,0 +1,39 @@
+@startuml
+' Opciones para que el diagrama se vea más moderno
+skinparam classAttributeIconSize 0
+hide empty members
+
+' Definición de la clase base
+class Persona {
+  - nombre : String
+  - edad : int
+  - identificacion : String
+  + getNombre() : String
+  + mostrarDatos() : void
+}
+
+' Definición de la clase hija
+class Estudiante {
+  - matricula : String
+  - carrera : String
+  + inscribirCurso(curso: Curso) : void
+  + estudiar() : void
+}
+
+' Definición de la clase Curso
+class Curso {
+  - codigo : String
+  - nombreCurso : String
+  - creditos : int
+  + mostrarInfoCurso() : void
+}
+
+' Relaciones entre las clases
+' 1. Herencia: Estudiante hereda de Persona
+Persona <|-- Estudiante
+
+' 2. Asociación: Un Estudiante puede estar en muchos Cursos (*) 
+'    y un Curso puede tener muchos Estudiantes (*)
+Estudiante "*" -- "*" Curso : se inscribe en >
+
+@enduml
